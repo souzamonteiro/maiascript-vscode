@@ -1,65 +1,73 @@
-# maiascript README
+# MaiaScript Visual Studio Code Extension
 
-This is the README for your extension "maiascript". After writing up a brief description, we recommend including the following sections.
+Copyright (C) 2020 Roberto Luiz Souza Monteiro, Renata Souza Barreto, Hernane Borges de Barros Pereira.
 
-## Features
+This software is distributed under the terms of several open sources licenses.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Please read the files LICENSE, COPYING or COPYING.LIB for further information.
 
-For example if there is an image subfolder under your extension project workspace:
+maiascript.js is a compiler that implements the MaiaScript programming language.
 
-\!\[feature X\]\(images/feature-x.png\)
+MaiaScript is a programming language aimed at developing adaptable and
+intelligent applications. An adaptive application modifies its code to
+suit the conditions of the environment. An intelligent application,
+it learns to process the data it receives and adjusts to possible changes
+in its characteristics, over time. The MaiaScript language implements the
+adaptation paradigm, combining it with a variation of the object-oriented
+paradigm, simplified to exclude definitions of types and access restrictions.
+These characteristics make MaiaScript a programming language suitable for
+rapid learning, both by Computer Science professionals and scientists who
+are starting to implement computational algorithms. The characteristics of
+this language, also allow the rapid development of complex applications,
+especially when adaptability is necessary. MaiaScript also presents a syntax
+similar to that used in Mathematics, including libraries for Numerical Calculation,
+Complex Network Analysis, Database Access, Regular Expression Processing, and an
+abstraction layer between the MaiaScript interpreter and the underlying Operating System.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+The complete documentation, including the EBNF grammar file and the compiler's
+syntax diagrams (railroad diagrams) can be found in the grammar directory.
+For more information send mail to: [mailto:support@maiascript.com](mailto:support@maiascript.com)
 
-## Requirements
+## INSTRUCTIONS FOR USE:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+To use the MaiaScript language in HTML documents, just include the
+file "js/maiascript.js" in the document and insert the MaiaScript code
+in `<script>` tags of type `"text/maiascript"`:
 
-## Extension Settings
+`<script type = "text/maiascript"> ... </script>`
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+To compile and run the scripts configure the page's onload event to execute
+the "maiavm.compile()" method:
 
-For example:
+`<body onload = "maiavm.compile();" ... </body>`
 
-This extension contributes the following settings:
+To run MaiaScript code from the console, you need to install "Node.js" and the
+npm packages "jsdom" and "websql". To run a script use:
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+`node js/maiascript.js "script name".maia`
 
-## Known Issues
+Or, if you installed the MaiaScript compiler using npm:
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+`maiascript "script name".maia`
 
-## Release Notes
+## INSTALL MAIASCRIPT VISUAL STUDIO CODE EXTENSION:
 
-Users appreciate release notes as you update your extension.
+To install the MaiaScript Visual Studio Code extension use the command:
 
-### 1.0.0
+`npm install -g maiascript-vscode`
 
-Initial release of ...
+Or, get it from GitHub:
 
-### 1.0.1
+`git clone https://github.com/souzamonteiro/maiascript-vscode.git`
 
-Fixed issue #.
+Or, download the latest zipped version:
 
-### 1.1.0
+`unzip maiascript-vscode-master.zip`
 
-Added features X, Y, and Z.
+`cd maiastudio-vscode-master`
 
------------------------------------------------------------------------------------------------------------
+`npm install -g .`
 
-## Working with Markdown
+Lauro de Freitas, September 2020.
 
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Roberto Luiz Souza Monteiro
