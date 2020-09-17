@@ -1,0 +1,30 @@
+{
+    "name": "maiascript-vscode",
+    "displayName": "MaiaScript",
+    "description": "Support for MaiaScript programming language.",
+    "version": "1.0.0",
+    "author": "The MaiaScript Team (https://www.maiascript.com)",
+    "engines": {
+        "vscode": "^1.49.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "maia",
+            "aliases": ["MaiaScript", "maia"],
+            "extensions": ["maia"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "maia",
+            "scopeName": "source.maiascript",
+            "path": "./syntaxes/maia.tmLanguage.json"
+        }]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/souzamonteiro/maiascript-vscode.git"
+    }
+}

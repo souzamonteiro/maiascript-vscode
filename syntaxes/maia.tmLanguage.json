@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "MaiaScript",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.maia",
+				"match": "\\b(namespace|function|if|else|elseif|do|while|for|foreach|try|test|catch|break|continue|return|throw|null|true|false)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.maia",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.maia",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.maiascript"
+}
