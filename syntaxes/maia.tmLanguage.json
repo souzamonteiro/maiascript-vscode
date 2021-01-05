@@ -13,7 +13,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.maia",
-				"match": "\\b(namespace|function|if|else|elseif|do|while|for|foreach|try|test|catch|break|continue|return|throw|null|true|false)\\b"
+				"match": "\\b(namespace|constructor|function|if|else|elseif|do|while|for|foreach|try|test|catch|break|continue|return|throw|null|true|false)\\b"
 			}]
 		},
 		"strings": {
